@@ -1,0 +1,17 @@
+# WP-244 — status-proxy
+# Workaround Cloudflare error 1014 «CNAME Cross-User Banned» —
+# проксирует status.aisystant.com → aisystant.betteruptime.com.
+# Better Stack видит запрос как direct, выпускает свой контент,
+# Cloudflare выдаёт SSL автоматически через Universal SSL.
+
+name = "status-proxy"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Custom domain route — Cloudflare маршрутизирует status.aisystant.com на этот Worker
+routes = [
+  { pattern = "status.aisystant.com/*", zone_name = "aisystant.com" }
+]
+
+[vars]
+UPSTREAM = "aisystant.betteruptime.com"
