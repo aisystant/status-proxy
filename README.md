@@ -55,7 +55,7 @@ URL продакшена: **https://status.aisystant.com**
 
 ## Связи
 
-- **Реализует:** [DP.SC.124 User-Facing Platform Health](../../PACK-digital-platform/pack/digital-platform/08-service-clauses/DP.SC.124-user-facing-platform-health.md)
+- **Реализует:** [DP.SC.124 User-Facing Platform Health](../../PACK-digital-platform/pack/digital-platform/08-service-clauses/DP.SC.144-user-facing-platform-health.md)
 - **Status page upstream:** https://aisystant.betteruptime.com (Better Stack)
 - **Соседний Worker:** [observability-webhook](../observability-webhook/) — пишет посты об инцидентах в [@aisystant_status](https://t.me/aisystant_status).
 - **Родительский РП:** [WP-244](../../DS-my-strategy/inbox/WP-244-platform-observability.md) Ф7.
